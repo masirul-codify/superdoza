@@ -13,6 +13,17 @@
   }
 }
 
+@media #{$md} {
+  .remove-section-vh { 
+    padding: 0 1.5rem !important;
+    height: auto !important;
+    position: relative;
+    overflow-x: hidden; 
+}
+}
+
+
+
 // ================ hero_area ================ //
 .hero_area {
   background: $light_pink;

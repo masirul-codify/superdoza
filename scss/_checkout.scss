@@ -21,7 +21,7 @@
                     font-family: $agrandir;
                     font-size: 2.8rem;
                     font-weight: 800;
-                    line-height: 3, 36rem;
+                    line-height: 3.36rem;
                     text-align: left;    
                 }
     
@@ -57,9 +57,9 @@
 
             .title { 
                 font-family: $agrandir;
-                font-size: 28px;
+                font-size: 2.8rem;
                 font-weight: 800;
-                line-height: 33.6px;
+                line-height: 3.36rem;
                 text-align: left;
 
             }
@@ -85,7 +85,7 @@
 
     .text-title {  
         font-family: $agrandir;
-        font-size: 28px;
+        font-size: 2.8rem;
         font-weight: 800;
         line-height: 33.6px;
         text-align: left;
@@ -98,7 +98,7 @@
         font-size: 1.6rem;
         font-weight: 600;
         line-height: 1.92rem;
-        gap: 10px;
+        gap: 1rem;
         background-color: $orange;
         border-radius: 30px;
         -webkit-border-radius: 30px;
@@ -114,19 +114,19 @@
 
     .payment-methods {
         max-width: 500px; 
-        padding: 20px;
+        padding: 2rem;
         border-radius: 10px; 
 
         h4 {
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
             font-weight: bold;
         }
 
         .payment-option {
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
 
             input[type='radio'] {
                 appearance: none;

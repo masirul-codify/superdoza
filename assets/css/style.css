@@ -721,6 +721,14 @@ h6 {
 }
 /*Medium devices (tablets, 767px and down)*/
 @media (max-width: 767px) {
+  .remove-section-vh {
+    width: 100vw;
+    height: 44vh !important;
+    padding-top: 12rem;
+  }
+}
+/*Medium devices (tablets, 767px and down)*/
+@media (max-width: 767px) {
   html {
     font-size: 55% !important;
   }
@@ -1287,6 +1295,14 @@ body:not(.homepage) .logo img {
   }
 }
 
+@media (max-width: 991.98px) {
+  .remove-section-vh {
+    padding: 0 1.5rem !important;
+    height: auto !important;
+    position: relative;
+    overflow-x: hidden;
+  }
+}
 .hero_area {
   background: #f0dbd9;
 }
@@ -2729,7 +2745,7 @@ body:not(.homepage) .logo img {
   font-family: "PP Agrandir Grand", sans-serif;
   font-size: 2.8rem;
   font-weight: 800;
-  line-height: 3, 36rem;
+  line-height: 3.36rem;
   text-align: left;
 }
 .checkout_area .login-btn-area .btn-wrapper .left p {
@@ -2758,9 +2774,9 @@ body:not(.homepage) .logo img {
 }
 .checkout_area .login-btn-area .btn-wrapper .title {
   font-family: "PP Agrandir Grand", sans-serif;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 800;
-  line-height: 33.6px;
+  line-height: 3.36rem;
   text-align: left;
 }
 .checkout_area .login-btn-area .rotate-text {
@@ -2780,7 +2796,7 @@ body:not(.homepage) .logo img {
 }
 .checkout_area .text-title {
   font-family: "PP Agrandir Grand", sans-serif;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 800;
   line-height: 33.6px;
   text-align: left;
@@ -2791,7 +2807,7 @@ body:not(.homepage) .logo img {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.92rem;
-  gap: 10px;
+  gap: 1rem;
   background-color: #da673a;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -2804,18 +2820,18 @@ body:not(.homepage) .logo img {
 }
 .checkout_area .payment-methods {
   max-width: 500px;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 10px;
 }
 .checkout_area .payment-methods h4 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
   font-weight: bold;
 }
 .checkout_area .payment-methods .payment-option {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 .checkout_area .payment-methods .payment-option input[type=radio] {
   appearance: none;

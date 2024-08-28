@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/nice-select.css">
   <link rel="stylesheet" href="assets/css/helper.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!--[if IE]>
@@ -37,9 +38,9 @@
       <div class="header_right  d-flex justify-content-between align-items-center">
         <div class="mobile_menu">
           <div class="primary_menus">
-            <a href="#" class="menu_link f_600">Domov</a>
-            <a href="#" class="menu_link f_600 ml_30">Izdelki</a>
-            <a href="#" class="menu_link f_600 ml_30">Zgodba</a>
+            <a href="index.html" class="menu_link f_600">Domov</a>
+            <a href="product.html" class="menu_link f_600 ml_30">Izdelki</a>
+            <a href="story.html" class="menu_link f_600 ml_30">Zgodba</a>
           </div>
         </div>
         <a href="#" class="button header_btn ml_30">
@@ -117,11 +118,11 @@
       <div class="container">
         <div class="row pt_30 row1">
           <div class="col-md-6 rightword">
-            <div class="stack_img_box story_img story_img1">
+            <div class="stack_img_box story_img story_img1 wow fadeInUp" data-wow-delay="0.4s">
               <img src="./assets/img/featurji_img1.png" alt="story_img">
             </div>
           </div>
-          <div class="col-md-6 leftword">
+          <div class="col-md-6 leftword wow fadeInUp" data-wow-delay="0.8s">
             <div class="content">
               <h3 class="pb_20">Zdrav življenjski slog</h3>
               <p>SuperDoza je vir inspiracije in motivacije za sledilce in skupnost, da dosežejo svoje najvišje
@@ -130,9 +131,13 @@
             </div>
           </div>
         </div>
+        
+        
+        
+        
         <div class="row pt_30 row2">
           <div class="col-md-6 rightword">
-            <div class="content">
+            <div class="content wow fadeInUp" data-wow-delay="0.4s">
               <h3 class="pb_20">Inovacije & izboljšave</h3>
               <p>Nenehno iščemo načine, kako izboljšati naše produkte in storitve skozi inovacije. Naša zaveza k
                 izboljšavam temelji na želji po zagotavljanju najboljših izdelkov in izkušenj za naše stranke.
@@ -140,19 +145,19 @@
             </div>
           </div>
           <div class="col-md-6 leftword">
-            <div class="stack_img_box story_img story_img2">
+            <div class="stack_img_box story_img story_img2 wow fadeInUp" data-wow-delay="0.7s">
               <img src="./assets/img/featurji_img2.png" alt="story_img">
             </div>
           </div>
         </div>
         <div class="row pt_30 row3">
           <div class="col-md-6 rightword">
-            <div class="stack_img_box story_img story_img3">
+            <div class="stack_img_box story_img story_img3 wow fadeInUp" data-wow-delay="0.4s">
               <img src="./assets/img/featurji_img3.png" alt="story_img">
             </div>
           </div>
           <div class="col-md-6 leftword">
-            <div class="content">
+            <div class="content wow fadeInUp" data-wow-delay="0.8s">
               <h3 class="pb_20">Poštenost & zaupanje</h3>
               <p>Delujemo s poštenostjo in transparentnostjo v vseh svojih odnosih - s strankami, partnerji in
                 zaposlenimi. Verjamemo, da sta zaupanje in integriteta temelja uspešnega poslovanja.
@@ -170,22 +175,22 @@
           <div class="team_title">
             <h2>Junaki<br> super<br> doze:</h2>
           </div>
-          <div class="team team1 stack_img_box">
+          <div class="team team1 stack_img_box wow fadeInUp" data-wow-delay="0.3s">
             <img src="./assets/img/team1.png" class="team1_img" alt="team1">
             <h3 class="pt_15 pb_10">Glorija</h3>
             <p>Uporabnica superdoze, ki ima rada življenje in uživa v vsakem trenutku.</p>
           </div>
-          <div class="team team2 stack_img_box">
+          <div class="team team2 stack_img_box wow fadeInUp" data-wow-delay="0.6s">
             <img src="./assets/img/team2.png" class="team2_img" alt="team2">
             <h3 class="pt_15 pb_10">Rok</h3>
             <p>Uporabnik superdoze, ki ima dinamičen način življenja in vključuje gibanje v svoj vsakdan.</p>
           </div>
-          <div class="team team3 stack_img_box">
+          <div class="team team3 stack_img_box wow fadeInUp" data-wow-delay="0.9s">
             <img src="./assets/img/team3.png" class="team3_img" alt="team3">
             <h3 class="pt_15 pb_10">Eva</h3>
             <p>Uporabnica superdoze, ki skrbi zase in za svoje telo.</p>
           </div>
-          <div class="team team4 stack_img_box">
+          <div class="team team4 stack_img_box wow fadeInUp" data-wow-delay="1.2s">
             <img src="./assets/img/team4.png" class="team4_img" alt="team4">
             <h3 class="pt_15 pb_10">Matej</h3>
             <p>Uporabnik superdoze, kateremu je superdoza enostavno “kul”.</p>
@@ -197,7 +202,7 @@
   </main>
 
   <!-- footer_area -->
-  <footer class="section footer pt_100 pb_40 footer_v2 position-relative d-grid align-content-between"  style="background: #F0DBD9">
+  <footer class="section remove-section-vh footer pt_100 pb_40 footer_v2 position-relative d-grid align-content-between"  style="background: #F0DBD9">
 
     <div class="container pb_80">
       <div class="row align-items-center">
@@ -264,7 +269,11 @@
 
   <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 </body>
 
