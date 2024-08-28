@@ -1,0 +1,49 @@
+// Font Family
+$brockmann: "Brockmann", sans-serif;
+$agrandir: "PP Agrandir Grand", sans-serif;
+
+// Colors
+$white: #fff;
+$black: #000;
+$orange: #da673a;
+$dark_pink: #d5abb9;
+$light_pink: #f0dbd9;
+$super_green: #0B8F85;
+$light_orange: #F0E0CA;
+$super_purple: #8F53A1;
+
+// img colors
+$imgWhite: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+  hue-rotate(325deg) brightness(105%) contrast(101%);
+$imgBlack: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(6932%)
+  hue-rotate(346deg) brightness(100%) contrast(99%);
+
+// rounds
+$round10: 1rem;
+$round10: 1rem;
+$round20: 2rem;
+$round08: 0.8rem;
+$round100: 10rem;
+
+// transitions
+$transitionxl: 0.5s ease;
+$transitionlg: 0.4s ease;
+$transitionmd: 0.3s ease;
+$transitionsm: 0.25s ease;
+$transitionxsm: 0.15s ease;
+
+// Responsive Variables
+$desktop-lg: "(min-width: 1800px)";
+$desktop: "(min-width: 1600px) and (max-width: 1799.98px)";
+$desktop-md: "(min-width: 1400px) and (max-width: 1599.98px)";
+$laptop: "(min-width: 1200px) and (max-width: 1399.98px)";
+$laptop-sm: "(min-width: 992px) and (max-width: 1439.98px)";
+$mini-laptop: "(min-width: 992px) and (max-width: 1199.98px)";
+$xl-device: "(min-width: 1200px)";
+$lg: "(min-width: 992px) and (max-width: 1199.98px)";
+$mdm: "(min-width: 992px)";
+$md: "(max-width: 991.98px)";
+$xsm: "(min-width: 768px) and (max-width: 991.98px)";
+$xsmin: "(min-width: 768px)";
+$xs: "(max-width: 767px)";
+$sm: "(max-width: 575px)";

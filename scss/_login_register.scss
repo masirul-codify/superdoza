@@ -1,0 +1,76 @@
+// ===================== login_area  ===================== //
+.login_area {
+  .row {
+    gap: 6rem 0;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    & > * {
+      padding: 0 3rem;
+    }
+  }
+  @media #{$md} {
+    padding: 3rem 0 6rem;
+    .row {
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+      & > * {
+        padding: 0 1.5rem;
+      }
+    }
+    h2 {
+      padding-bottom: 2.5rem;
+    }
+  }
+  @media #{$xs} {
+    padding: 3rem 0 3rem;
+  }
+}
+.contact_form {
+  .form_group {
+    .input_field,
+    .input_field::placeholder {
+      font-weight: 400 !important;
+    }
+
+    .checkbox {
+      cursor: pointer;
+      .check {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.3rem;
+        background: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img { 
+          opacity: 0!important;
+        }
+      }
+      &.active {
+        .check { 
+          background: $orange;
+          img { 
+            opacity: 1!important;
+          }
+        }
+      }
+    }
+  }
+  .form_link {
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: $orange;
+    }
+  }
+  p {
+    line-height: 140%;
+  }
+  @media #{$md} {
+    .form_group {
+      margin-bottom: 1rem;
+    }
+  }
+}

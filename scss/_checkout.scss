@@ -1,0 +1,378 @@
+/* -------------- Checkout --------------- */
+.checkout_area {
+
+    .login-btn-area {
+        position: relative;
+        padding-right: 3rem;
+        .btn-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem;
+            background-color: $white;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+    
+            .left {
+                h3 {
+                    font-family: $agrandir;
+                    font-size: 2.8rem;
+                    font-weight: 800;
+                    line-height: 3, 36rem;
+                    text-align: left;    
+                }
+    
+                p {
+                    font-family: $brockmann;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 2.24rem;
+                    text-align: left;
+                }
+            }
+    
+            .right {
+                .loginBtn {
+                    padding: 1.5rem 3rem 1.5rem 3rem;
+                    font-family: $brockmann;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    line-height: 1.92rem;
+                    gap: 10px;
+                    background-color: $orange;
+                    border-radius: 3rem;
+                    -webkit-border-radius: 3rem;
+                    -moz-border-radius: 3rem;
+                    -ms-border-radius: 3rem;
+                    -o-border-radius: 3rem;
+}
+            }
+
+            &.style2 {
+                padding: 3rem 0;
+            }
+
+            .title { 
+                font-family: $agrandir;
+                font-size: 28px;
+                font-weight: 800;
+                line-height: 33.6px;
+                text-align: left;
+
+            }
+        }
+
+        .rotate-text {
+            position: absolute; 
+            font-family: $brockmann;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 2.24rem;
+            text-align: center;
+
+            top: 4.5rem;
+            right: -3.5rem;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+}
+    }
+
+    .text-title {  
+        font-family: $agrandir;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 33.6px;
+        text-align: left;
+
+    }
+
+    .themeBtn {
+        padding: 10px 35px 10px 35px;
+        font-family: $brockmann;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.92rem;
+        gap: 10px;
+        background-color: $orange;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+
+    .form_group .input_field {
+        height: 5rem;
+    }
+
+
+    .payment-methods {
+        max-width: 500px; 
+        padding: 20px;
+        border-radius: 10px; 
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            input[type='radio'] {
+                appearance: none;
+                width: 2rem;
+                height: 2rem;
+                border: 0.2rem solid $white;
+                background: $white;
+                border-radius: 50%;
+                margin-right: 1rem;
+                cursor: pointer;
+                position: relative;
+
+                &:checked::before {
+                    content: '';
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    line-height: 1.5rem;
+                    background-color: $orange;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0.08rem;
+                    left: 0.08rem;
+                }
+            }
+
+            label {
+                font-size: 1.8rem;
+                cursor: pointer;
+            }
+        }
+
+        .bank-details {
+            margin-left: 3rem;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .payment-logos {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                height: 2rem;
+                vertical-align: middle;
+            }
+        }
+
+
+        .bank-details {
+            display: none; // Hide by default
+            margin-left: 3rem;
+            color: #555;
+            font-size: 1.4rem;
+
+            &.visible {
+                display: block; // Show when visible class is added
+            }
+        }
+
+
+        .small-text1,
+        .small-text2,
+        .small-text3 {
+            display: none; // Hide by default
+            display: none; // Hide by default
+            font-size: 1.2rem;
+            color: #888;
+            margin-top: 1rem;
+
+            &.visible {
+                display: block; // Show when visible class is added
+            }
+        }
+    }
+
+    .box-wrapper {
+        padding: 3rem;
+        background-color: $white;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            
+            .title { 
+                font-family: $brockmann;
+                font-size: 1.6rem;
+                font-weight: 600;
+                line-height: 2.24rem;
+                text-align: left; 
+            }
+
+            .price { 
+                font-family: $brockmann;
+                font-size: 1.6rem; 
+                line-height: 2.24rem;
+                font-weight: 400; 
+                text-align: left;
+
+            }
+        }
+
+        .border-bottoms { 
+            font-family: $brockmann;
+            font-size: 1.4rem; 
+            line-height: 1.96rem;
+            font-weight: 400; 
+            text-align: right;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #F0E0CA;
+            margin-bottom: 2rem;
+
+        }
+
+        h6 {
+            font-family: $brockmann;
+            font-size: 1.4rem; 
+            line-height: 1.96rem;
+            font-weight: 400; 
+            text-align: right;
+            padding-bottom: 1rem;
+        }
+
+        .checkbox {
+            .check  {
+                background: $light_orange!important;
+            }
+            &.active {
+                .check {
+                    background: #da673a!important;
+                }
+    
+            }
+            p { 
+                font-family: $brockmann;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.24rem;
+                text-align: left;
+
+            }            
+        }
+}
+
+@media #{$xs} {  
+    .login-btn-area {  
+        padding-right: 0;
+        .btn-wrapper {
+            padding: 2rem 1rem;
+            .left {
+                h3 { 
+                    font-size: 2rem; 
+                    line-height: 2.4rem;   
+                } 
+    
+                p { 
+                font-family: $brockmann;
+                font-size: 1.4rem; 
+                line-height: 1.98rem; 
+                }
+            }
+            .right {
+                .loginBtn {
+                    padding: 1rem 1.5rem; 
+                    font-size: 1.6rem; 
+                    line-height: 1.92rem; 
+                }
+            }
+        }
+
+        .rotate-text {
+            display: none;
+        }
+    }
+
+    
+    .text-title {   
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-bottom: -1rem;
+    }
+
+    .themeBtn {
+        padding: 10px 35px 10px 35px; 
+        font-size: 1.6rem; 
+        line-height: 1.92rem; 
+    }
+ 
+    .payment-methods {
+        margin-bottom: -3rem;
+    }
+ 
+
+    .box-wrapper {
+        padding: 1rem; 
+        margin-bottom: -3rem;
+        ul {  
+            
+            .title {  
+                font-size: 1.6rem; 
+                line-height: 2.24rem; 
+            }
+
+            .price {  
+                font-size: 1.6rem; 
+                line-height: 2.24rem;  
+
+            }
+        }
+
+        .border-bottoms {  
+            font-size: 1.4rem; 
+            line-height: 1.96rem; 
+
+        }
+
+        h6 { 
+            font-size: 1.4rem; 
+            line-height: 1.96rem; 
+        }
+
+        .checkbox {
+
+            p {  
+                font-size: 1.6rem; 
+                line-height: 2.24rem; 
+
+            }            
+        }
+}
+
+}
+
+}
+
+
+
+
+
+
+
+

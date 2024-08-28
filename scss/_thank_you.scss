@@ -1,0 +1,154 @@
+// ===================== fakts_area_v2 ======================== //
+$slidedotwidth: 1.2rem;
+.fakts_area_v2 {
+  .text_slide_area {
+    width: 50rem;
+    margin: 0 auto;
+    transform: rotate(-4deg);
+    .owl-stage {
+      padding: 0;
+    }
+    .owl-dots {
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      padding-top: 3rem;
+      position: relative;
+      height: 0.8rem;
+      button {
+        width: fit-content;
+        height: fit-content;
+        span {
+          width: $slidedotwidth;
+          height: 0.8rem;
+          border-radius: 0.1rem;
+          background: $light_orange;
+          display: block;
+        }
+        &.active {
+          span {
+            background: $orange;
+          }
+        }
+      }
+      &.dot1,
+      &.dot2,
+      &.dot3,
+      &.dot4,
+      &.dot5,
+      &.dot6,
+      &.dot7,
+      &.dot8,
+      &.dot9,
+      &.dot10 {
+        button {
+          &:nth-child(1) {
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+      &.dot2,
+      &.dot3,
+      &.dot4,
+      &.dot5,
+      &.dot6,
+      &.dot7,
+      &.dot8,
+      &.dot9,
+      &.dot10 {
+        button {
+          &:nth-child(2) {
+            position: absolute;
+            right: calc($slidedotwidth * 2 - 0.2rem);
+          }
+        }
+      }
+      &.dot3,
+      &.dot4,
+      &.dot5,
+      &.dot6,
+      &.dot7,
+      &.dot8,
+      &.dot9,
+      &.dot10 {
+        button {
+          &:nth-child(3) {
+            position: absolute;
+            right: calc($slidedotwidth * 4 - 0.4rem);
+          }
+        }
+      }
+      &.dot4,
+      &.dot5,
+      &.dot6,
+      &.dot7,
+      &.dot8,
+      &.dot9,
+      &.dot10 {
+        button {
+          &:nth-child(4) {
+            position: absolute;
+            right: calc($slidedotwidth * 6 - 0.6rem);
+          }
+        }
+      }
+      &.dot5,
+      &.dot6,
+      &.dot7,
+      &.dot8,
+      &.dot9,
+      &.dot10 {
+        button {
+          &:nth-child(5) {
+            position: absolute;
+            right: calc($slidedotwidth * 8 - 0.8rem);
+          }
+        }
+      }
+    }
+  }
+  .fakt_bottle1 {
+    width: 25rem;
+    right: 15rem;
+  }
+  .fakt_bottle2 {
+    width: 30rem;
+  }
+  @media #{$md} {
+    .text_slide_area {
+      width: 40rem;
+      .owl-dots {
+        padding-top: 1.5rem;
+      }
+    }
+    p {
+      &.pt_30.pb_30 {
+        padding: 1.5rem 0;
+      }
+    }
+    .fakt_bottle1 {
+      width: 20rem;
+      right: 7.2rem;
+      -webkit-transform: rotate(-10.75deg);
+      transform: rotate(25.25deg);
+      bottom: -4rem;
+    }
+    .fakt_bottle2 {
+      width: 23rem;
+      top: -2.5rem;
+    }
+  }
+  @media #{$xs} {
+    padding: 9.5rem 0 4rem;
+    .text_slide_area {
+      width: 27.6rem;
+      transform: translateX(1rem) rotate(-4deg);
+    }
+    p {
+      &.pt_30.pb_30 {
+        padding: 2.5rem 0 1.5rem 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+// ============= stack_img_area_v2 ============== //
+.products_area_v2 {
+  .row {
+    &.row1 {
+      margin-left: -3.5rem;
+      margin-right: -3.5rem;
+      & > * {
+        padding: 0 3.5rem;
+      }
+    }
+    &.row2 {
+      gap: 12rem 0;
+    }
+  }
+  .productv2_flower_card {
+    border-radius: 2rem;
+    transform: translateY(1rem) rotate(4deg);
+    width: fit-content;
+    .flower2 {
+      width: 6rem;
+    }
+    h3 {
+      white-space: nowrap;
+    }
+  }
+  .product_content {
+    width: 29.15rem;
+  }
+  @media #{$mdm} {
+    .product_discount {
+      top: -1rem !important;
+      right: 3.5rem !important;
+    }
+  }
+  @media #{$md} {
+    .row {
+      &.row1 {
+        padding-bottom: 6rem;
+        padding-right: 7rem;
+      }
+      &.row2 {
+        gap: 6rem 0;
+      }
+    }
+    .productv2_flower_card {
+      border-radius: 0.8rem;
+      padding: 1.2rem 0.8rem;
+      .flower2 {
+        width: 3rem;
+      }
+    }
+    .product_content {
+      width: 16rem;
+    }
+    .productv2_flower_area {
+      h2 {
+        padding-bottom: 1.5rem;
+      }
+    }
+    .product_discount {
+      top: -1rem;
+      right: 2rem;
+    }
+  }
+  @media #{$xs} {
+    padding: 3rem 0;
+    .row {
+      &.row1 {
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 3.5rem;
+        & > * {
+          padding: 0;
+        }
+      }
+      &.row2 {
+        gap: 6rem 0;
+        width: 100%;
+        .col-6 {
+          &:nth-child(even) {
+            .product_img {
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .productv2_flower_card {
+      border-radius: 0.8rem;
+      padding: 1.2rem 0.8rem;
+      margin: 0 auto;
+      .flower2 {
+        width: 3rem;
+      }
+      h3 {
+        font-size: 2.4rem;
+      }
+    }
+    .productv2_flower_area {
+      h2 {
+        padding-right: 4rem;
+      }
+      p {
+        padding-right: 4rem;
+      }
+    }
+    .product_img {
+      img {
+        padding-top: 2rem;
+        width: 18rem;
+      }
+    }
+    .product_content {
+      width: 100%;
+    }
+    .product_discount {
+      top: 2rem;
+      right: 5rem;
+    }
+  }
+}
+
+// ============== title_area =============== //
+.title_area {
+  @media #{$md} {
+    padding: 4rem 0;
+  }
+  @media #{$xs} {
+    padding: 2rem 0;
+  }
+}
